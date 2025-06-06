@@ -746,6 +746,7 @@ setup_model()
 		;;
 	*mt3000* |\
 	glinet,x3000-emmc |\
+	*ZX7981EM* |\
 	*xe3000* |\
 	*cudy* |\
 	*mt2500* |\

@@ -19,6 +19,7 @@ mediatek_setup_interfaces()
 		ucidef_add_switch "switch0" \
 			"0:lan" "1:lan" "2:lan" "3:lan" "4:lan" "6u@eth0"
 		;;
+	*ZX7981EM* |\
 	*2500wan-p5*)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
 		;;
@@ -277,6 +278,7 @@ mediatek_setup_macs()
 		sed -i '/MacAddress=$wifi_mac/d' /etc/wireless/mediatek/mt7981.dbdc.b1.dat
 		echo "MacAddress=$wifi_mac" >> /etc/wireless/mediatek/mt7981.dbdc.b1.dat
 		;;
+	*ZX7981EM* |\
 	cmcc,rax3000m-emmc*)
 		lan_mac=$(mmc_get_mac_binary factory 0x24)
 		wan_mac=$(mmc_get_mac_binary factory 0x2a)

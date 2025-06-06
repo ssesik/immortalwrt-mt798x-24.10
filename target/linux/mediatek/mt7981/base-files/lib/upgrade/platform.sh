@@ -219,6 +219,7 @@ platform_do_upgrade() {
 		;;
 	Airpi |\
 	huasifei,wh3000-emmc |\
+	*ZX7981EM* |\
 	cmcc,rax3000m-emmc |\
 	cmcc,xr30-emmc |\
 	*sl,3000* |\
@@ -250,6 +251,7 @@ platform_check_image() {
 	cudy* |\
 	*mt3000* |\
 	glinet,x3000-emmc |\
+	*ZX7981EM* |\
 	*xe3000* |\
 	*mt2500* |\
 	*zr-3020* |\
